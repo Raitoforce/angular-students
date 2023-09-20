@@ -1,0 +1,8 @@
+.nav-link{
+  border-bottom: 2px solid transparent !important;
+
+  &:hover {
+    transform: translateY(-1px) scale(1.02);
+  }
+}
+

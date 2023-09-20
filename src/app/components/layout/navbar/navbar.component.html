@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Students 👩‍🔬👨‍🔬</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" *ngFor="let route of routes">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="route.route">{{ route.title }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
