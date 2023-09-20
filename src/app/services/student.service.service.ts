@@ -7,6 +7,6 @@ import {HttpClient} from "@angular/common/http";
 })
 export class StudentServiceService extends BaseCrud<any>{
   constructor(httpClient: HttpClient) {
-    super( 'student', httpClient);
+    super( 'students', httpClient);
   }
 }

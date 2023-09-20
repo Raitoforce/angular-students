@@ -1,1 +1,26 @@
-<p>student-list works!</p>
+<ng-container *ngIf="student$ | async as students">
+  <table class="table" *ngIf="students.length > 0; else noData">
+    <thead>
+    <tr>
+      <th scope="col" *ngFor="let header of headers"> {{ header}}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let student of students">
+      <td> {{student.name}} </td>
+      <td> {{ student.lastName }}</td>
+      <td> {{ student.email}}</td>
+    </tr>
+
+    </tbody>
+  </table>
+</ng-container>
+
+<ng-template #noData>
+  <div class="alert alert-info p-3 row justify-content-center">
+    Not Data yet 😲
+    <div class="row justify-content-center pt-3">
+      <a routerLink="/form" class="btn btn-primary">Add new Student</a>
+    </div>
+  </div>
+</ng-template>

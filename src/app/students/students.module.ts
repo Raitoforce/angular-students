@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { StudentListComponent } from './student-list/student-list.component';
 import { StudentFormComponent } from './student-form/student-form.component';
+import {CommonModule} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 
 
@@ -11,7 +12,8 @@ import { StudentFormComponent } from './student-form/student-form.component';
     StudentFormComponent
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    RouterLink,
+  ],
 })
 export class StudentsModule { }

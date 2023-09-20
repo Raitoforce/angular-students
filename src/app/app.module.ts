@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {LayoutModule} from "./components/layout/layout.module";
+import {HttpClientModule} from "@angular/common/http";
+import {CommonModule} from "@angular/common";
+import {StudentsModule} from "./students/students.module";
 
 @NgModule({
   declarations: [
@@ -12,7 +15,9 @@ import {LayoutModule} from "./components/layout/layout.module";
     imports: [
         BrowserModule,
         AppRoutingModule,
-        LayoutModule
+        LayoutModule,
+        HttpClientModule,
+        StudentsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,8 +5,8 @@ import {StudentFormComponent} from "./students/student-form/student-form.compone
 
 const routes: Routes = [
   { path: 'list', component: StudentListComponent },
-  { path: 'form', component: StudentFormComponent },
   { path: 'form/:id', component: StudentFormComponent },
+  { path: 'form', component: StudentFormComponent },
   { path: '**', redirectTo: 'list' },
 ];
 
